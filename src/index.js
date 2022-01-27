@@ -17,6 +17,7 @@ ReactDOM.render(
         }
         body {
           background-color: rgb(16, 18, 60);
+          font-family: sans-serif;
         }
       `}
     />

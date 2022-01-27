@@ -4,37 +4,17 @@ import { css } from '@emotion/react';
 // import { ReactComponent as LightningBolt } from './images/lightningBolt.svg';
 import { ReactComponent as NavBarLogo } from './images/navBarLogo.svg';
 
-const HeroImage = css`
+const heroImage = css`
   background-image: url('/hero.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  position: center;
+
+  background-position: 100% 40%;
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
 `;
-// const SectionInnerDiv = css`
-//   position: relative;
-//   width: 100vw;
-//   height: 100vh;
-/* display: grid;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 250px 1fr;
-//   grid-area: 1 / 1 / 1 / 1; */
-// `;
 
-// const SectionOuterDiv = css`
-//   /* display: grid;
-//   grid-template-columns: 250px 1fr;
-//   grid-template-rows: 250px 1fr;
-//   grid-area: 1 / 1/ 1 / 1; */
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-// `;
-
-const NavLogoSectionStyle = css`
+const navLogoSectionStyle = css`
   display: flex;
   position: absolute;
   top: 30px;
@@ -50,7 +30,7 @@ const NavLogoSectionStyle = css`
   color: white;
 `;
 
-const LogoStyle = css`
+const logoStyle = css`
   display: block;
   width: 40px;
   height: auto;
@@ -60,11 +40,11 @@ const LogoStyle = css`
   color: #fff;
 `;
 
-const LogoTextStyle = css`
+const logoTextStyle = css`
   padding-left: 8px;
 `;
 
-const NavigationStyle = css`
+const navigationStyle = css`
   display: flex;
   position: static;
   /* top: 20px; */
@@ -81,7 +61,7 @@ const NavigationStyle = css`
   color: white;
 `;
 
-const ButtonStyle = css`
+const buttonStyle = css`
   width: 253px;
   height: 64px;
   border-radius: 45px;
@@ -92,7 +72,6 @@ const ButtonStyle = css`
   margin-top: 0;
   margin-right: 0;
   margin-left: 10px;
-  /* padding: 13px 10px 0 15px; */
   font-family: 'DM Sans', sans-serif;
   color: #fff;
   font-size: 18px;
@@ -100,26 +79,30 @@ const ButtonStyle = css`
   font-weight: 700;
   text-align: center;
   letter-spacing: 1px;
+  &:hover {
+    border: solid #bdbdbd 0;
+    box-shadow: 0px 0px 0px 6px rgba(245, 121, 121, 0.47);
+  }
 `;
 
-const ATagColorStyle = css`
+const aTagColorStyle = css`
   color: white;
   text-decoration: none;
 `;
 
-const Iconstyle = css`
-  display: flex;
-  flex-direction: row;
-  height: 20px;
-  width: 20px;
-`;
-const TextAreaStyle = css`
+// const iconstyle = css`
+//   display: flex;
+//   flex-direction: row;
+//   height: 20px;
+//   width: 20px;
+// `;
+const textAreaStyle = css`
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 75vh;
   justify-content: center;
 `;
-const HeroTextStyle = css`
+const heroTextStyle = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +115,7 @@ const HeroTextStyle = css`
     line-height: 0px;
     margin-top: 22px;
     padding: 0;
-    font-size: 60px;
+    font-size: 55px;
   }
   p {
     /* width: 40vw; */
@@ -146,7 +129,7 @@ const HeroTextStyle = css`
     font-weight: 500;
   }
 `;
-const PricingButton = css`
+const pricingButton = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,8 +145,6 @@ const PricingButton = css`
     transition: box-shadow 0.2s, background-color 0.2s;
     margin-top: 50px;
     margin-right: 0;
-    /* margin-left: 42vw; */
-    /* padding: 13px 10px 0 15px; */
     font-family: 'DM Sans', sans-serif;
     color: #fff;
     font-size: 18px;
@@ -171,9 +152,13 @@ const PricingButton = css`
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
+    &:hover {
+      border: solid #bdbdbd 0;
+      box-shadow: 0px 0px 0px 6px rgba(245, 121, 121, 0.47);
+    }
   }
 `;
-const ContactButton = css`
+const contactButton = css`
   display: flex;
   /* flex-direction: column; */
   justify-content: flex-end;
@@ -183,65 +168,67 @@ const ContactButton = css`
   right: 0;
   bottom: 0;
   button {
-    width: 200px;
-    height: 50px;
+    width: 160px;
+    height: 60px;
     border-radius: 45px;
     border: 1px #fc687b;
     background-color: rgb(251, 67, 91);
     box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
     transition: box-shadow 0.2s, background-color 0.2s;
-    /* margin-top: 500px; */
-
-    /* margin-right: 0; */
-    margin-right: 100px;
-    /* padding: 13px 10px 0 15px; */
+    margin: 25px;
     font-family: 'DM Sans', sans-serif;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
+    position: fixed;
+    &:hover {
+      /* background: #f8f8f8; */
+      border: solid #bdbdbd 0;
+      box-shadow: 0px 0px 0px 6px rgba(245, 121, 121, 0.47);
+    }
   }
 `;
 
 export default function HeroSection() {
   return (
     <div>
-      <section css={HeroImage}>
+      <section css={heroImage}>
         {/* <div></div> */}
         <div>
           <nav>
-            <div css={NavLogoSectionStyle}>
+            <div css={navLogoSectionStyle}>
               <div>
-                <NavBarLogo css={LogoStyle} />
+                <NavBarLogo css={logoStyle} />
               </div>
-              <div css={LogoTextStyle}>pixeltrue</div>
+              <div css={logoTextStyle}>pixeltrue</div>
             </div>
-            <div css={NavigationStyle}>
+            <div css={navigationStyle}>
               <div>Case Studies</div>
               <div>Pricing</div>
               <div>Our Work</div>
               <div>Our Platform</div>
               <div>
                 <li>
-                  <a href="/" css={ATagColorStyle}>
+                  <a href="/" css={aTagColorStyle}>
                     More
                   </a>
                 </li>
               </div>
               <div>
                 <li>
-                  <a href="/" css={ATagColorStyle}>
+                  <a href="/" css={aTagColorStyle}>
                     Login
                   </a>
                 </li>
               </div>
-              <button css={ButtonStyle}>Schedule Demo</button>
+              <button css={buttonStyle}>Schedule Demo</button>
             </div>
           </nav>
-          <div css={TextAreaStyle}>
-            <div css={HeroTextStyle}>
+          <div css={textAreaStyle}>
+            <div css={heroTextStyle}>
               <h1>Get A Superhero Design Team </h1>
               <h1>To Grow Your Business</h1>
               <p>
@@ -251,11 +238,11 @@ export default function HeroSection() {
                 Zero <br />
                 headaches, fixed pricing and no contracts.
               </p>
-              <div css={PricingButton}>
+              <div css={pricingButton}>
                 <button>SEE OUR PRICING</button>
               </div>
             </div>
-            <div css={ContactButton}>
+            <div css={contactButton}>
               <button>Contact Us</button>
             </div>
           </div>

@@ -1,9 +1,11 @@
 import './App.css';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import CustomDesigns from './CustomDesigns';
 import DesignerSection from './DesignerSection.js';
 import HeroSection from './Hero';
 import IconSection from './IconSection';
+import YouTubeSection from './YouTubeSection';
 
 // Need to move the images path to make the images public later
 
@@ -16,6 +18,8 @@ function App() {
       <HeroSection />
       <IconSection />
       <DesignerSection />
+      <CustomDesigns />
+      <YouTubeSection />
     </div>
   );
 }

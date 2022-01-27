@@ -47,3 +47,25 @@
             <li className="dropdown-item">Free Illustrations</li>
             <li className="dropdown-item">Illustration Packs</li> */
 }
+
+// const SectionInnerDiv = css`
+//   position: relative;
+//   width: 100vw;
+//   height: 100vh;
+/* display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 250px 1fr;
+//   grid-area: 1 / 1 / 1 / 1; */
+// `;
+
+// const SectionOuterDiv = css`
+//   /* display: grid;
+//   grid-template-columns: 250px 1fr;
+//   grid-template-rows: 250px 1fr;
+//   grid-area: 1 / 1/ 1 / 1; */
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+// `;

@@ -18,33 +18,33 @@ const IconRowStyle = css`
   align-items: center;
   align-content: center;
   height: 400px;
-  width: 70vw;
+  width: 60vw;
   text-align: center;
-  margin-left: 15%;
+  margin-left: 20%;
 
   .educative > img {
-    height: 80px;
-    width: 110px;
-    margin: 0 60px;
+    height: 70px;
+    width: 100px;
+    margin: 0 40px;
   }
 
   .streak > img {
-    height: 85px;
-    width: 95px;
-    margin: 0 60px;
+    height: 75px;
+    width: 85px;
+    margin: 0 40px;
   }
 
   .ligr > img {
-    height: 110px;
-    width: 110px;
+    height: 100px;
+    width: 100px;
     padding-bottom: 10px;
-    margin: 0 60px;
+    margin: 0 40px;
   }
 `;
 const BridgeStyle = css`
-  height: 140px;
-  width: 180px;
-  margin: 20px 60px -30px 60px;
+  height: 130px;
+  width: 170px;
+  margin: 20px 20px -30px 20px;
   padding: 0;
 `;
 
