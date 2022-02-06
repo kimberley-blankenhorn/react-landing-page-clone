@@ -7,11 +7,11 @@ import Educative_Logo from './images/Educative_Logo.png';
 import LIGR from './images/LIGR.png';
 import Streak_Logo from './images/Streak_Logo.png';
 
-const BodyStyle = css`
+const bodyStyle = css`
   background-color: rgb(16, 18, 60);
 `;
 
-const IconRowStyle = css`
+const iconRowStyle = css`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,7 +41,7 @@ const IconRowStyle = css`
     margin: 0 40px;
   }
 `;
-const BridgeStyle = css`
+const bridgeStyle = css`
   height: 130px;
   width: 170px;
   margin: 20px 20px -30px 20px;
@@ -55,8 +55,8 @@ const BridgeStyle = css`
 export default function IconSection() {
   return (
     <div>
-      <section css={BodyStyle}>
-        <div css={IconRowStyle}>
+      <section css={bodyStyle}>
+        <div css={iconRowStyle}>
           <div className="educative">
             <img
               src={Educative_Logo}
@@ -71,13 +71,13 @@ export default function IconSection() {
             <img src={LIGR} alt="Lion" />
           </div>
           <div className="bridge">
-            <Bridge css={BridgeStyle} />
+            <Bridge css={bridgeStyle} />
           </div>
           <div className="streak">
             <img src={Streak_Logo} alt="Streak Logo" />
           </div>
           <div className="bridge">
-            <Bridge css={BridgeStyle} />
+            <Bridge css={bridgeStyle} />
           </div>
           <div className="educative">
             <img

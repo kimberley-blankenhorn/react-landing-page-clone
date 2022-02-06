@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import './App.css';
 import { css } from '@emotion/react';
-import { ReactComponent as Flamingo } from './images/flamingo.svg';
+// import { ReactComponent as Flamingo } from './images/flamingo.svg';
 import Habits from './images/habitsApp.jpeg';
 import UiDesign from './images/uiDesign.png';
 import Video from './images/video.gif';
