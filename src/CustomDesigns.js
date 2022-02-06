@@ -15,14 +15,14 @@ const customTextHeading = css`
   text-align: center;
   margin: 0;
   h1 {
-    font-size: 43px;
+    font-size: 35px;
     margin: 0 0 22px 0;
     span {
       color: rgb(79, 185, 220);
     }
   }
   p {
-    font-size: 22px;
+    font-size: 18px;
     margin: 0 0 100px 0;
     color: rgb(212, 214, 255);
   }
@@ -42,9 +42,9 @@ const imageRowStyle = css`
 `;
 
 const uiImage = css`
-  width: 36vw;
-  height: 55vh;
-  margin: 0px 50px 100px 50px;
+  width: 40vw;
+  height: 65vh;
+  margin: 0px 23px 100px 50px;
   display: flex;
   justify-content: center;
   img {
@@ -67,8 +67,8 @@ const onHoverButtonStyle = css`
 `;
 
 const buttonStyle = css`
-  width: 350px;
-  height: 70px;
+  width: 300px;
+  height: 60px;
   border-radius: 45px;
   border: 1px #fc687b;
   background-color: rgb(251, 67, 91);
@@ -80,7 +80,7 @@ const buttonStyle = css`
   /* padding: 13px 10px 0 15px; */
   font-family: 'DM Sans', sans-serif;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   text-align: center;

@@ -6,8 +6,8 @@ const youTubeH1 = css`
   display: flex;
   justify-content: center;
   color: white;
-  margin: 100px 50px 40px 50px;
-  font-size: 30px;
+  margin: 100px 50px 0 50px;
+  font-size: 25px;
   font-family: sans-serif;
 `;
 

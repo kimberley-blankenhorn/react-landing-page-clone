@@ -12,11 +12,13 @@ const bodyStyle = css`
 `;
 const footerStyle = css`
   display: flex;
+  width: 100vw;
 `;
 const footerSectionStyle = css`
-  width: 300px;
+  width: 220px;
   display: flex;
   flex-direction: column;
+  font-size: 14px;
 
   /* padding-left: 30px; */
 `;
@@ -25,27 +27,28 @@ const buttonSectionStyle = css`
   width: 500px;
   line-height: 30px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   color: white;
+  margin-left: 50px;
 `;
 
 const secondColumnStyle = css`
-  margin-left: -100px;
-  width: 300px;
+  margin-left: -150px;
+  width: 220px;
 `;
 
 const firstLineStyle = css`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   color: white;
 `;
 
 const buttonStyle = css`
-  width: 253px;
-  height: 64px;
+  width: 213px;
+  height: 50px;
   border-radius: 45px;
   border: 1px #fc687b;
-  background-color: #fd576c;
+  background-color: rgb(251, 67, 91);
   box-shadow: 0 0 0 6px rgb(253 87 108 / 25%);
   transition: box-shadow 0.2s, background-color 0.2s;
   margin-top: 20px;
@@ -53,7 +56,7 @@ const buttonStyle = css`
   margin-left: 10px;
   font-family: 'DM Sans', sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -66,9 +69,10 @@ const buttonStyle = css`
 
 const allRightsStyle = css`
   width: 100vw;
-  margin: 50px 0 0 -100px;
+  height: 10px;
+  margin: 100px 0 -40px -100px;
   text-align: center;
-  font-size: 23px;
+  font-size: 12px;
   hr {
     opacity: 0.2;
   }

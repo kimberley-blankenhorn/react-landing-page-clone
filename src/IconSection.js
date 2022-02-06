@@ -23,28 +23,28 @@ const iconRowStyle = css`
   margin-left: 20%;
 
   .educative > img {
-    height: 70px;
-    width: 100px;
+    height: 60px;
+    width: 90px;
     margin: 0 40px;
   }
 
   .streak > img {
-    height: 75px;
-    width: 85px;
+    height: 65px;
+    width: 75px;
     margin: 0 40px;
   }
 
   .ligr > img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     padding-bottom: 10px;
     margin: 0 40px;
   }
 `;
 const bridgeStyle = css`
-  height: 130px;
-  width: 170px;
-  margin: 20px 20px -30px 20px;
+  height: 110px;
+  width: 150px;
+  margin: -1px 20px -30px 20px;
   padding: 0;
 `;
 

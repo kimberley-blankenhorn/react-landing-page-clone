@@ -23,7 +23,7 @@ const designerHeadingTextStyle = css`
   align-content: center;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
+  font-size: 35px;
   line-height: 60px;
 `;
 const spanStyle = css`
@@ -35,6 +35,8 @@ const cardSection = css`
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin: -50px auto;
+  width: 80vw;
 `;
 const cardText = css`
   display: flex;
@@ -42,17 +44,19 @@ const cardText = css`
   justify-content: center;
   text-align: left;
   height: 20px;
-  width: 380px;
+  width: 280px;
   h1 {
-    font-size: 30px;
-    margin-left: 60px;
+    font-size: 23px;
+    text-align: center;
+    margin: 30px 0 0 -20px;
+    /* margin: auto; */
     line-height: 40px;
     font-weight: bolder;
-    margin-bottom: -1px;
+
     color: rgb(255, 255, 255);
   }
   p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 30px;
     margin-left: 60px;
     font-weight: 500;
@@ -67,10 +71,11 @@ const onHoverStyle = css`
 const confusedStyle = css`
   display: flex;
   flex-direction: column;
-  height: 479px;
-  width: 430px;
+  height: 400px;
+  width: 375px;
+  margin: 100px 30px 100px 0;
   /* margin-left: 30px; */
-  margin-top: 100px;
+  background-color: rgb(22, 25, 65);
   border-radius: 23px;
   box-shadow: 4px 1px 7px 0px rgba(105, 173, 194, 0.63);
   &:hover {
@@ -81,53 +86,68 @@ const confusedStyle = css`
 
 const confusedImageStyle = css`
   position: relative;
-  margin-left: 30px;
+  margin-left: 50px;
   z-index: 1;
-  top: -100px;
+  top: -65px;
 `;
-
-const calendarStyle = css`
-  display: flex;
-  flex-direction: column;
-  height: 479px;
-  width: 430px;
-  margin-left: 80px;
-  margin-top: 100px;
-  border-radius: 23px;
-  box-shadow: 4px 1px 7px 0px rgba(105, 173, 194, 0.63);
-  &:hover {
-    box-shadow: ${onHoverStyle};
-    transition: box-shadow 0.4s;
-  }
-`;
-
 const worriedImageStyle = css`
   position: relative;
   margin-left: 30px;
   z-index: 1;
-  top: -100px;
+  top: -60px;
 `;
 
 const worriedStyle = css`
   display: flex;
   flex-direction: column;
-  height: 479px;
-  width: 430px;
-  margin-left: 80px;
-  margin-top: 100px;
+  height: 400px;
+  width: 375px;
+  background-color: rgb(22, 25, 65);
+  margin: 100px 30px 100px 30px;
   border-radius: 23px;
   box-shadow: 4px 1px 7px 0px rgba(105, 173, 194, 0.63);
   &:hover {
     box-shadow: ${onHoverStyle};
     transition: box-shadow 0.4s;
   }
+  h1 {
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  p {
+    margin-left: 40px;
+  }
+`;
+
+const calendarStyle = css`
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 375px;
+  background-color: rgb(22, 25, 65);
+  margin: 100px 0 100px 30px;
+  border-radius: 23px;
+  box-shadow: 4px 1px 7px 0px rgba(105, 173, 194, 0.63);
+  &:hover {
+    box-shadow: ${onHoverStyle};
+    transition: box-shadow 0.4s;
+  }
+  h1 {
+    margin-left: 0px;
+    /* padding-top: 5px; */
+  }
+
+  p {
+    margin-left: 45px;
+  }
 `;
 
 const calendarImageStyle = css`
   position: relative;
-  margin-left: 30px;
+  margin-left: 0px;
   z-index: 1;
-  top: -100px;
+  top: -60px;
 `;
 
 const easySection = css`
@@ -139,14 +159,18 @@ const easySection = css`
 
 const bubbleSelect = css`
   position: relative;
-  top: 160px;
+  top: 70px;
   left: 210px;
+`;
+
+const heroImageStyle = css`
+  margin-top: -50px;
 `;
 
 const bubbleChat = css`
   position: absolute;
   /* top: 10px; */
-  left: 1100px;
+  left: 780px;
 `;
 
 const bubbleClock = css`
@@ -162,16 +186,16 @@ const cardAndImageSection = css`
 
 const cardAndImageText = css`
   width: 32vw;
-  margin: 250px 60px 50px 120px;
+  margin: 160px 60px 70px 150px;
   h1 {
     color: white;
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 20px;
     margin-bottom: 0;
   }
   p {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 28px;
     color: rgb(192, 194, 235);
   }
 `;
@@ -183,36 +207,36 @@ const workingTogetherImage = css`
 
 const cardAndImageWorkingText = css`
   width: 32vw;
-  margin: 100px 60px 50px 200px;
+  margin: 100px 60px 50px 80px;
   h1 {
     color: white;
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 20px;
     margin-bottom: 0;
   }
   p {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 28px;
     color: rgb(192, 194, 235);
   }
 `;
 
 const meditationImage = css`
-  margin-top: -220px;
+  margin-top: -100px;
   /* margin-left: 20px; */
 `;
 
 const cardAndImageMeditationText = css`
   width: 32vw;
-  margin: 130px 60px 50px 120px;
+  margin: 100px 60px 50px 150px;
   h1 {
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
     margin-bottom: 0;
   }
   p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 35px;
     color: rgb(192, 194, 235);
   }
@@ -232,7 +256,7 @@ export default function DesignerSection() {
         <div css={cardSection}>
           <div css={confusedStyle}>
             <div css={confusedImageStyle}>
-              <Confused height="250px" width="260px" />
+              <Confused height="190px" width="200px" />
             </div>
             <div css={cardText}>
               <h1>Poor Quality</h1>
@@ -244,7 +268,7 @@ export default function DesignerSection() {
           </div>
           <div css={worriedStyle}>
             <div css={worriedImageStyle}>
-              <Worried height="250px" width="260px" />
+              <Worried height="190px" width="200px" />
             </div>
             <div css={cardText}>
               <h1>Bad Communication</h1>
@@ -256,7 +280,7 @@ export default function DesignerSection() {
           </div>
           <div css={calendarStyle}>
             <div css={calendarImageStyle}>
-              <Calendar height="250px" width="260px" />
+              <Calendar height="190px" width="200px" />
             </div>
             <div css={cardText}>
               <h1>Missed deadlines</h1>
@@ -278,7 +302,7 @@ export default function DesignerSection() {
         <div>
           <div css={cardAndImageSection}>
             <div css={bubbleSelect}>
-              <Select width="110px" height="120px" />
+              <Select width="85px" height="95px" />
             </div>
             <div css={cardAndImageText}>
               <h1> Breath-taking Designs</h1>
@@ -293,17 +317,17 @@ export default function DesignerSection() {
               </p>
             </div>
 
-            <div>
-              <SuperHero width="800px" height="800px" />
+            <div css={heroImageStyle}>
+              <SuperHero width="600px" height="600px" />
             </div>
           </div>
 
           <div css={cardAndImageSection}>
             <div css={workingTogetherImage}>
-              <WorkingTogether width="800px" height="800px" />
+              <WorkingTogether width="600px" height="600px" />
             </div>
             <div css={bubbleChat}>
-              <Chat width="110px" height="120px" />
+              <Chat width="85px" height="95px" />
             </div>
             <div css={cardAndImageWorkingText}>
               <h1>Communication That Matters</h1>
@@ -317,7 +341,7 @@ export default function DesignerSection() {
 
           <div css={cardAndImageSection}>
             <div css={bubbleClock}>
-              <Clock width="110px" height="120px" />
+              <Clock width="85px" height="95px" />
             </div>
             <div css={cardAndImageMeditationText}>
               <h1> No More Missed Deadlines</h1>
@@ -332,7 +356,7 @@ export default function DesignerSection() {
               </p>
             </div>
             <div css={meditationImage}>
-              <Meditation width="800px" height="800px" />
+              <Meditation width="600px" height="600px" />
             </div>
           </div>
         </div>

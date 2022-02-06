@@ -21,20 +21,20 @@ const tryUsOutStyle = css`
   color: white;
   font-family: 'DM Sans', sans-serif;
   p {
-    font-size: 23px;
+    font-size: 18px;
     line-height: 30px;
   }
   span {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: underline;
   }
   h2 {
     margin-top: -10px;
-    font-size: 48px;
+    font-size: 32px;
   }
   button {
-    width: 323px;
-    height: 73px;
+    width: 300px;
+    height: 62px;
     border-radius: 45px;
     border: 1px #fc687b;
     background-color: #fd576c;
@@ -45,7 +45,7 @@ const tryUsOutStyle = css`
     margin-left: 10px;
     font-family: 'DM Sans', sans-serif;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     text-align: center;

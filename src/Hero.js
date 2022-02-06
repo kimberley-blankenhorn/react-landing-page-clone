@@ -21,18 +21,18 @@ const navLogoSectionStyle = css`
   left: 0px;
   width: 10%;
   padding: 0 80px;
-  margin: auto;
+  margin: -20px 0;
   align-items: center;
   /* justify-content: space-between; */
   font-family: 'DM Sans', sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   color: white;
 `;
 
 const logoStyle = css`
   display: block;
-  width: 40px;
+  width: 45px;
   height: auto;
   margin-top: 19px;
   margin-left: 5px;
@@ -41,7 +41,8 @@ const logoStyle = css`
 `;
 
 const logoTextStyle = css`
-  padding-left: 8px;
+  padding: 10px;
+  margin-top: 8px;
 `;
 
 const navigationStyle = css`
@@ -56,14 +57,14 @@ const navigationStyle = css`
   justify-content: space-between;
   list-style: none;
   font-family: 'DM Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: white;
 `;
 
 const buttonStyle = css`
-  width: 253px;
-  height: 64px;
+  width: 213px;
+  height: 54px;
   border-radius: 45px;
   border: 1px #fc687b;
   background-color: #fd576c;
@@ -74,7 +75,7 @@ const buttonStyle = css`
   margin-left: 10px;
   font-family: 'DM Sans', sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -115,7 +116,7 @@ const heroTextStyle = css`
     line-height: 0px;
     margin-top: 22px;
     padding: 0;
-    font-size: 55px;
+    font-size: 45px;
   }
   p {
     /* width: 40vw; */
@@ -125,7 +126,7 @@ const heroTextStyle = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
   }
 `;
@@ -136,8 +137,8 @@ const pricingButton = css`
   align-content: center;
   align-items: center;
   button {
-    width: 300px;
-    height: 64px;
+    width: 280px;
+    height: 60px;
     border-radius: 45px;
     border: 1px #fc687b;
     background-color: rgb(251, 67, 91);
@@ -147,7 +148,7 @@ const pricingButton = css`
     margin-right: 0;
     font-family: 'DM Sans', sans-serif;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -168,8 +169,8 @@ const contactButton = css`
   right: 0;
   bottom: 0;
   button {
-    width: 160px;
-    height: 60px;
+    width: 130px;
+    height: 45px;
     border-radius: 45px;
     border: 1px #fc687b;
     background-color: rgb(251, 67, 91);
@@ -178,7 +179,7 @@ const contactButton = css`
     margin: 25px;
     font-family: 'DM Sans', sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
