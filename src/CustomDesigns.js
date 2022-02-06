@@ -42,8 +42,8 @@ const imageRowStyle = css`
 `;
 
 const uiImage = css`
-  width: 34vw;
-  height: 60vh;
+  width: 36vw;
+  height: 55vh;
   margin: 0px 50px 100px 50px;
   display: flex;
   justify-content: center;
